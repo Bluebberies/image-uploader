@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+body {
+  min-height: 100vh;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App .card {
+  padding: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.App .loader {
+  width: 250px;
+  height: 90px;
+  padding: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+.App .loader p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.App .loader .loaderLine {
+  width: 240px;
+  height: 6px;
+  background: #F2F2F2;
+  border-radius: 8px;
+}
+
+.App .loader .loaderLine .movingLine{
+  width: 100.93px;
+  height: inherit;
+  background: #2F80ED;
+  border-radius: 8px;  
+  position: relative;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {left: 0px;}
+  50% {left: 138px;} 
+  100% {left: 0px;}
+}
+
+.App .card .wrapper p.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  display: flex;
+  justify-content: center;
+}
+
+.App .card .wrapper h4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #828282;
+}
+
+.App .container .dropbox {
+  width: 338px;
+  height: 218.9px;
+  background: url('./assets/image.svg') #F6F8FB no-repeat;
+  background-position: center;
+  background-size: 10rem;
+  border: 2px dashed #97BEF4;
+  border-radius: 12px;
+  position: relative;
+}
+
+.App .container .dropbox.dragActive {
+  border: 3px dashed rgb(86, 184, 87);
+}
+
+.App .container .dropbox p {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 85px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  margin-top: auto;
+  color: #BDBDBD;
+}
+
+.App .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App .container .button p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #BDBDBD;
+}
+
+.App .container .button button {
+  cursor: pointer;
+  width: 101px;
+  height: 31.98px;
+  background: #2F80ED;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+}
+
+.App .container .button button:active {
+  box-shadow: inset 2px 2px 2px black;
+}
+
+.App .card .resultWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.App .card .resultWrapper .checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #219653;
+  border-radius: 50px;
+}
+
+.App .card .resultWrapper .checkIcon {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+
+}
+
+.App .card .resultWrapper p {
+  display: flex;
+  font-family: 'Poppins';
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.App .card .resultWrapper img {
+  width: 338px;
+  height: 225px;
+  border-radius: 12px;
+}
+
+.App .card .resultWrapper .linkInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 338px;
+  height: 34px;
+  background: #F6F8FB;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.App .card .resultWrapper .linkInput input {
+  width: 240px;
+  height: 15px;
+  background-color: inherit;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  border: none;
+  text-indent: 5px;
+}
+
+.App .card .resultWrapper .linkInput input:focus {
+  outline: none;
+  border: none;
+}
+
+.App .card .resultWrapper .linkInput button {
+  width: 74px;
+  height: inherit;
+  border: none;
+  background: #2F80ED;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.App .card .resultWrapper button.refresh {
+  width: 74px;
+  height: 35px;
+  border: none;
+  background: #2F80ED;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.App .card .resultWrapper button:active {
+  box-shadow: inset 2px 2px 2px black;
+}
+
+.App .footer {
+  position: absolute;
+  bottom: 0;
+  left: 50
+}
+
+.App .footer p {
+  font-weight: bolder;
+}
+
+.App .footer p a {
+  text-decoration: none;
+}
